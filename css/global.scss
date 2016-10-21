@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    // border: 1px dashed grey;
+}
+// Generic Styling
+body{
+    background-color: lightgrey;
+    width: 100%;
+}
+
+//Styling for the Watch Body
+.watchBody{
+    margin-top: 100px;
+    border-radius: 50px;
+
+}
+
+//Styling for the Watch Header
+
+//Styling for the Watch Time Section
+.watchTimerBox{
+
+}
+//Styling for the Watch Button Area
+#stopBtn{
+    visibility: hidden;
+}

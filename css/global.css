@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgrey;
+  width: 100%;
+}
+
+.watchBody {
+  margin-top: 100px;
+  border-radius: 50px;
+}
+
+#stopBtn {
+  visibility: hidden;
+}
