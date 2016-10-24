@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+//Generic styling...
+body {
+    height: 100%;
+    background-color: lightgrey;
+    padding: 50px;
+    display: flex;
+}
+
+//Styling of the watchBody...
+.watchBody{
+    background: url('./usain-bolt-8.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 150px;
+    opacity: .85;
+}
+//Styling of the watch Time...
+.watchTime{
+    background-color: rgba(0,0,0, .65);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    p{
+        padding: 5px;
+        font-size: 30px;
+        color: #fff;
+    }
+}

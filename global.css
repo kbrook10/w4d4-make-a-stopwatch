@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background-color: lightgrey;
+  padding: 50px;
+  display: flex;
+}
+
+.watchBody {
+  background: url("./usain-bolt-8.jpg") no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  padding: 150px;
+  opacity: .85;
+}
+
+.watchTime {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.watchTime p {
+  padding: 5px;
+  font-size: 30px;
+  color: #fff;
+}
