@@ -16,8 +16,8 @@ Questions:
 
 //Create initial time variables for counting
 var _10thSecond = 0;
-var _second =  0;
-var _minute = 0;
+var _second = '0'+ 0;
+var _minute = '0'+ 0;
 var watchTimer
 var startBtn = document.getElementById('startBtn');
 console.log(startBtn.innerHTML);
@@ -39,7 +39,7 @@ function start(){
         _second = 0;
     }
     console.log(_10thSecond);
-    startTime.innerHTML = 'Time: ' + _minute + ':' +(_second < 10 ? '0' : '') + _second + ':' + _10thSecond; //--> This overrides the default number to start counting...
+    startTime.innerHTML = 'Time: ' + _minute + ':' +_second + ':' + _10thSecond; //--> This overrides the default number to start counting...
 };
 
 //Create function to increase 10th of a second (Timer Function) -> This starts the clock
@@ -49,7 +49,7 @@ function countTimer(){
         startBtn.innerHTML = 'Pause'
         start()
     }
-    else {
+    else if (startBtn.innerHTML === 'Paused') {
         startBtn.innerHTML = 'Continue'
     }
 };
@@ -75,7 +75,6 @@ document.getElementById('pauseBtn').addEventListener('click', pauseTimer);
 
 function pauseTimer(){
     clearInterval(watchTimer)
-    clearTimeout()
     pauseTimeOut()
 }
 
@@ -125,7 +124,7 @@ function changeColor(){
 
     var rgba = 'rgb('+ r + ','+  g + ',' + b + ')';
     document.querySelector('.watchBody').style.backgroundColor = rgba;
-    // document.querySelector('.watchBody').style.transition = 'all ' + 1 +'s' + 'ease'
+    document.querySelector('.watchBody').style.transition = 'all ' + 1 +'s' + 'ease'
 }
 
 //<----------------------End of Task Item-------------------->
@@ -140,7 +139,10 @@ Questions:
 ()Why am i going to do it this way?
 */
 // console.dir(document.querySelector('.watchBody'))
-
+function scroll(){
+    document.querySelector('.watchBody')
+    console.log(scroll)
+}
 
 
 //<----------------------End of Task Item-------------------->
