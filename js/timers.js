@@ -55,10 +55,12 @@
 //Section 3: Setting Intervals to create basics of stop watch
 //<-------------------BEGIN OF SECTION-------------------------->
 var counter = 0
+var timerText = document.querySelector('#timerContent');
 
 function doThis (){ //Increments
     counter++
     console.log(counter)
+    timerText.innerHTML = counter;
 }
 
 var timer   // --> Create variable as global to be able to reuse...
